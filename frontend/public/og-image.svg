@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <rect x="70" y="70" width="1060" height="490" rx="28" fill="#111827" stroke="#38bdf8" stroke-width="4"/>
+  <circle cx="240" cy="315" r="90" fill="#38bdf8" opacity="0.95"/>
+  <path d="M195 315h90" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M240 270v90" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+  <text x="380" y="285" fill="#f8fafc" font-family="Arial, sans-serif" font-size="56" font-weight="700">CamTech</text>
+  <text x="380" y="345" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="32">Agence web premium</text>
+  <text x="380" y="395" fill="#38bdf8" font-family="Arial, sans-serif" font-size="24">Sites, applications et automatisations IA</text>
+</svg>

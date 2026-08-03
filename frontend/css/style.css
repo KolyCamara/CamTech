@@ -1,0 +1,96 @@
+/* Legacy global styles have been consolidated into the premium design system in styles/global.css. */
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline-item {
+  border-left: 3px solid var(--primary-color);
+  padding: 0.8rem 1rem;
+  background: #f8fafc;
+  border-radius: 0 12px 12px 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+}
+
+.form-card,
+.contact-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  font: inherit;
+}
+
+.contact-list {
+  list-style: none;
+  display: grid;
+  gap: 0.8rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.map-placeholder {
+  padding: 2rem;
+  text-align: center;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .services-grid,
+  .testimonials-grid,
+  .posts-grid,
+  .stats-grid,
+  .team-grid,
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-grid,
+  .services-grid,
+  .testimonials-grid,
+  .posts-grid,
+  .stats-grid,
+  .team-grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 4rem;
+  }
+
+  .blog-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-box input {
+    min-width: 100%;
+  }
+}
