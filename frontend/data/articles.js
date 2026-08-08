@@ -2,6 +2,7 @@ export const articles = [
   {
     slug: "site-rapide-performant",
     title: "Comment créer un site rapide et performant ?",
+    categoryKey: "technology",
     category: "Technologie",
     author: "Amina",
     date: "12 juillet 2026",
@@ -25,6 +26,7 @@ export const articles = [
   {
     slug: "design-uiux-conversions",
     title: "Pourquoi le design UI/UX transforme les conversions ?",
+    categoryKey: "design",
     category: "Design",
     author: "Karim",
     date: "8 juillet 2026",
@@ -48,6 +50,7 @@ export const articles = [
   {
     slug: "tendances-web-2026",
     title: "Les tendances du web à suivre en 2026",
+    categoryKey: "marketing",
     category: "Marketing",
     author: "Sarah",
     date: "2 juillet 2026",

@@ -73,124 +73,236 @@ const homeCopy = {
   },
 };
 
-const services = [
-  {
-    icon: "01",
-    title: "Sites web",
-    text: "Des sites vitrines rapides, clairs et optimises pour transformer les visiteurs en contacts.",
-  },
-  {
-    icon: "02",
-    title: "Applications",
-    text: "Des plateformes web sur mesure pour organiser vos operations et mieux servir vos clients.",
-  },
-  {
-    icon: "03",
-    title: "SEO & contenu",
-    text: "Une presence digitale construite pour etre visible, credible et mesurable.",
-  },
-  {
-    icon: "04",
-    title: "Automatisation IA",
-    text: "Des outils intelligents pour reduire les taches repetitives et accelerer vos equipes.",
-  },
-];
+const services = {
+  FR: [
+    {
+      icon: "01",
+      title: "Sites web",
+      text: "Des sites vitrines rapides, clairs et optimises pour transformer les visiteurs en contacts.",
+    },
+    {
+      icon: "02",
+      title: "Applications",
+      text: "Des plateformes web sur mesure pour organiser vos operations et mieux servir vos clients.",
+    },
+    {
+      icon: "03",
+      title: "SEO & contenu",
+      text: "Une presence digitale construite pour etre visible, credible et mesurable.",
+    },
+    {
+      icon: "04",
+      title: "Automatisation IA",
+      text: "Des outils intelligents pour reduire les taches repetitives et accelerer vos equipes.",
+    },
+  ],
+  EN: [
+    {
+      icon: "01",
+      title: "Websites",
+      text: "Fast, clear and optimized sites designed to turn visitors into leads.",
+    },
+    {
+      icon: "02",
+      title: "Applications",
+      text: "Custom web platforms to organize operations and better serve your clients.",
+    },
+    {
+      icon: "03",
+      title: "SEO & content",
+      text: "A digital presence built to be visible, credible and measurable.",
+    },
+    {
+      icon: "04",
+      title: "AI automation",
+      text: "Smart tools to reduce repetitive tasks and speed up your teams.",
+    },
+  ],
+};
 
-const processSteps = [
-  {
-    title: "Audit & strategie",
-    text: "Nous clarifions vos objectifs, vos clients et les priorites qui creent vraiment de la valeur.",
-  },
-  {
-    title: "Design & contenu",
-    text: "Nous structurons une experience simple a comprendre, rassurante et adaptee a votre marque.",
-  },
-  {
-    title: "Developpement",
-    text: "Nous construisons une base propre, responsive et facile a faire evoluer.",
-  },
-  {
-    title: "Lancement",
-    text: "Nous mettons en ligne, mesurons les premiers resultats et optimisons les points bloquants.",
-  },
-];
+const processSteps = {
+  FR: [
+    {
+      title: "Audit & strategie",
+      text: "Nous clarifions vos objectifs, vos clients et les priorites qui creent vraiment de la valeur.",
+    },
+    {
+      title: "Design & contenu",
+      text: "Nous structurons une experience simple a comprendre, rassurante et adaptee a votre marque.",
+    },
+    {
+      title: "Developpement",
+      text: "Nous construisons une base propre, responsive et facile a faire evoluer.",
+    },
+    {
+      title: "Lancement",
+      text: "Nous mettons en ligne, mesurons les premiers resultats et optimisons les points bloquants.",
+    },
+  ],
+  EN: [
+    {
+      title: "Audit & strategy",
+      text: "We clarify your goals, customers and priorities that truly create value.",
+    },
+    {
+      title: "Design & content",
+      text: "We structure an experience that is easy to understand, reassuring and adapted to your brand.",
+    },
+    {
+      title: "Development",
+      text: "We build a clean, responsive foundation that is easy to scale.",
+    },
+    {
+      title: "Launch",
+      text: "We publish, measure early results and optimize the main friction points.",
+    },
+  ],
+};
 
-const projects = [
-  {
-    title: "Digital Launch",
-    description:
-      "Site de lancement avec parcours de conversion et tableau de suivi.",
-    tags: ["React", "Landing", "SEO"],
-  },
-  {
-    title: "Portail client",
-    description:
-      "Espace prive pour centraliser les demandes, documents et notifications.",
-    tags: ["Dashboard", "UX", "Automatisation"],
-  },
-  {
-    title: "Boutique locale",
-    description:
-      "Catalogue responsive avec pages produits, tunnel de demande et analytics.",
-    tags: ["E-commerce", "Performance", "Mobile"],
-  },
-];
+const projects = {
+  FR: [
+    {
+      title: "Digital Launch",
+      description:
+        "Site de lancement avec parcours de conversion et tableau de suivi.",
+      tags: ["React", "Landing", "SEO"],
+    },
+    {
+      title: "Portail client",
+      description:
+        "Espace prive pour centraliser les demandes, documents et notifications.",
+      tags: ["Dashboard", "UX", "Automatisation"],
+    },
+    {
+      title: "Boutique locale",
+      description:
+        "Catalogue responsive avec pages produits, tunnel de demande et analytics.",
+      tags: ["E-commerce", "Performance", "Mobile"],
+    },
+  ],
+  EN: [
+    {
+      title: "Digital Launch",
+      description: "Launch site with conversion flow and tracking dashboard.",
+      tags: ["React", "Landing", "SEO"],
+    },
+    {
+      title: "Client portal",
+      description:
+        "Private space for centralizing requests, documents and notifications.",
+      tags: ["Dashboard", "UX", "Automation"],
+    },
+    {
+      title: "Local shop",
+      description:
+        "Responsive catalogue with product pages, inquiry funnel and analytics.",
+      tags: ["E-commerce", "Performance", "Mobile"],
+    },
+  ],
+};
 
-const pricing = [
-  {
-    plan: "Starter",
-    price: "1 999 MAD",
-    description: "Pour lancer une presence digitale professionnelle.",
-    features: [
-      "Site vitrine",
-      "5 pages",
-      "Responsive",
-      "Formulaire de contact",
-    ],
-  },
-  {
-    plan: "Business",
-    price: "4 999 MAD",
-    description: "Pour vendre, convaincre et suivre les performances.",
-    features: [
-      "Design sur mesure",
-      "SEO de base",
-      "Analytics",
-      "Support prioritaire",
-    ],
-    highlight: true,
-  },
-  {
-    plan: "Sur mesure",
-    price: "Sur devis",
-    description:
-      "Pour les plateformes, integrations et automatisations avancees.",
-    features: [
-      "Application web",
-      "Connecteurs",
-      "Automatisation IA",
-      "Maintenance",
-    ],
-  },
-];
+const pricing = {
+  FR: [
+    {
+      plan: "Starter",
+      price: "1 999 MAD",
+      description: "Pour lancer une presence digitale professionnelle.",
+      features: [
+        "Site vitrine",
+        "5 pages",
+        "Responsive",
+        "Formulaire de contact",
+      ],
+    },
+    {
+      plan: "Business",
+      price: "4 999 MAD",
+      description: "Pour vendre, convaincre et suivre les performances.",
+      features: [
+        "Design sur mesure",
+        "SEO de base",
+        "Analytics",
+        "Support prioritaire",
+      ],
+      highlight: true,
+    },
+    {
+      plan: "Sur mesure",
+      price: "Sur devis",
+      description:
+        "Pour les plateformes, integrations et automatisations avancees.",
+      features: [
+        "Application web",
+        "Connecteurs",
+        "Automatisation IA",
+        "Maintenance",
+      ],
+    },
+  ],
+  EN: [
+    {
+      plan: "Starter",
+      price: "1 999 MAD",
+      description: "To launch a professional digital presence.",
+      features: ["Showcase site", "5 pages", "Responsive", "Contact form"],
+    },
+    {
+      plan: "Business",
+      price: "4 999 MAD",
+      description: "To sell, convince and monitor performance.",
+      features: ["Custom design", "Basic SEO", "Analytics", "Priority support"],
+      highlight: true,
+    },
+    {
+      plan: "Custom",
+      price: "On request",
+      description: "For platforms, integrations and advanced automations.",
+      features: [
+        "Web application",
+        "Connectors",
+        "AI automation",
+        "Maintenance",
+      ],
+    },
+  ],
+};
 
-const faqs = [
-  {
-    question: "Combien de temps faut-il pour lancer un projet ?",
-    answer:
-      "Un site vitrine peut etre livre en quelques semaines. Une application suit un planning defini apres l'audit.",
-  },
-  {
-    question: "CamTech accompagne-t-il apres la livraison ?",
-    answer:
-      "Oui. Nous pouvons assurer maintenance, suivi SEO, ameliorations produit et support technique.",
-  },
-  {
-    question: "Travaillez-vous avec les petites entreprises ?",
-    answer:
-      "Oui. Les offres sont pensees pour rester claires, progressives et adaptees a chaque budget.",
-  },
-];
+const faqs = {
+  FR: [
+    {
+      question: "Combien de temps faut-il pour lancer un projet ?",
+      answer:
+        "Un site vitrine peut etre livre en quelques semaines. Une application suit un planning defini apres l'audit.",
+    },
+    {
+      question: "CamTech accompagne-t-il apres la livraison ?",
+      answer:
+        "Oui. Nous pouvons assurer maintenance, suivi SEO, ameliorations produit et support technique.",
+    },
+    {
+      question: "Travaillez-vous avec les petites entreprises ?",
+      answer:
+        "Oui. Les offres sont pensees pour rester claires, progressives et adaptees a chaque budget.",
+    },
+  ],
+  EN: [
+    {
+      question: "How long does it take to launch a project?",
+      answer:
+        "A showcase site can be delivered in a few weeks. An app follows a defined plan after the audit.",
+    },
+    {
+      question: "Does CamTech support after delivery?",
+      answer:
+        "Yes. We can provide maintenance, SEO follow-up, product improvements and technical support.",
+    },
+    {
+      question: "Do you work with small businesses?",
+      answer:
+        "Yes. The offers are designed to stay clear, progressive and suited to every budget.",
+    },
+  ],
+};
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState(0);
@@ -216,14 +328,22 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
+  const pageDescription =
+    language === "EN"
+      ? "CamTech builds websites, applications, SEO strategies and AI automations for ambitious companies."
+      : "CamTech cree des sites web, applications, strategies SEO et automatisations IA pour les entreprises.";
+
+  const currentServices = services[language];
+  const currentProcessSteps = processSteps[language];
+  const currentProjects = projects[language];
+  const currentPricing = pricing[language];
+  const currentFaqs = faqs[language];
+
   return (
     <>
       <Head>
         <title>CamTech | Solutions digitales</title>
-        <meta
-          name="description"
-          content="CamTech cree des sites web, applications, strategies SEO et automatisations IA pour les entreprises."
-        />
+        <meta name="description" content={pageDescription} />
       </Head>
       <Header />
       <main>
@@ -266,7 +386,7 @@ export default function Home() {
                 <strong>{t.status}</strong>
               </div>
               <div className="project-panel__steps">
-                {processSteps.map((step, index) => (
+                {currentProcessSteps.map((step, index) => (
                   <div className="project-step" key={step.title}>
                     <span>{index + 1}</span>
                     <div>
@@ -290,7 +410,7 @@ export default function Home() {
               <p>{t.expertiseText}</p>
             </div>
             <div className="service-grid">
-              {services.map((service) => (
+              {currentServices.map((service) => (
                 <article
                   className="card service-card animate-on-scroll"
                   key={service.title}
@@ -312,7 +432,7 @@ export default function Home() {
               <p>{t.methodText}</p>
             </div>
             <div className="timeline">
-              {processSteps.map((step, index) => (
+              {currentProcessSteps.map((step, index) => (
                 <article
                   className="timeline-item animate-on-scroll"
                   key={step.title}
@@ -335,7 +455,7 @@ export default function Home() {
               <h2>{t.workTitle}</h2>
             </div>
             <div className="grid-3">
-              {projects.map((project) => (
+              {currentProjects.map((project) => (
                 <article
                   className="card project-card animate-on-scroll"
                   key={project.title}
@@ -360,7 +480,7 @@ export default function Home() {
               <h2>{t.pricingTitle}</h2>
             </div>
             <div className="pricing-grid">
-              {pricing.map((tier) => (
+              {currentPricing.map((tier) => (
                 <article
                   className={`card pricing-card ${tier.highlight ? "featured" : ""}`}
                   key={tier.plan}
@@ -395,7 +515,7 @@ export default function Home() {
               <h2>{t.faqTitle}</h2>
             </div>
             <div className="faq-list">
-              {faqs.map((faq, index) => (
+              {currentFaqs.map((faq, index) => (
                 <article className="faq-item" key={faq.question}>
                   <button
                     type="button"

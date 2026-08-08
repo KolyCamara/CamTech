@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap");
+@font-face {
+  font-family: "Agency FB";
+  src: local("Agency FB");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --primary-color: #0f63c8;
@@ -28,7 +34,7 @@ html {
 
 body {
   min-width: 320px;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Agency FB", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
   background: linear-gradient(
@@ -125,7 +131,7 @@ main {
   font-size: clamp(1.8rem, 2.4vw, 2.3rem);
   line-height: 1.2;
   margin-bottom: 0.7rem;
-  font-family: "Poppins", "Inter", sans-serif;
+  font-family: "Agency FB", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-title p,
@@ -211,7 +217,7 @@ main {
   font-size: clamp(2.2rem, 4vw, 3.8rem);
   line-height: 1.05;
   letter-spacing: -0.03em;
-  font-family: "Poppins", "Inter", sans-serif;
+  font-family: "Agency FB", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero p {
@@ -298,7 +304,7 @@ main {
   color: var(--text-color);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   line-height: 1.1;
-  font-family: "Poppins", "Inter", sans-serif;
+  font-family: "Agency FB", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .project-panel__header strong,
@@ -591,7 +597,7 @@ main {
   color: var(--text-color);
   font-size: clamp(2rem, 3vw, 2.8rem);
   line-height: 1.1;
-  font-family: "Poppins", "Inter", sans-serif;
+  font-family: "Agency FB", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .page-subtitle {

@@ -21,9 +21,13 @@ const content = {
     adviceText: "Une approche adaptee a votre objectif de croissance.",
     name: "Nom",
     namePlaceholder: "Votre nom",
+    emailLabel: "Email",
+    emailPlaceholder: "email@exemple.com",
     message: "Message",
     messagePlaceholder: "Decrivez votre projet",
     submit: "Envoyer",
+    sending: "Envoi...",
+    errorSend: "Impossible d'envoyer le message.",
     success: "Merci ! Votre demande a bien ete recue.",
   },
   EN: {
@@ -39,9 +43,13 @@ const content = {
     adviceText: "An approach adapted to your growth goal.",
     name: "Name",
     namePlaceholder: "Your name",
+    emailLabel: "Email",
+    emailPlaceholder: "email@example.com",
     message: "Message",
     messagePlaceholder: "Describe your project",
     submit: "Send",
+    sending: "Sending...",
+    errorSend: "Unable to send the message.",
     success: "Thank you! Your request has been received.",
   },
 };
@@ -81,15 +89,13 @@ export default function Contact() {
       });
 
       if (!response.ok) {
-        throw new Error("Erreur lors de l'envoi du message.");
+        throw new Error(t.errorSend);
       }
 
       setSuccess(true);
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      setError(
-        err instanceof Error ? err.message : "Impossible d'envoyer le message.",
-      );
+      setError(err instanceof Error ? err.message : t.errorSend);
     } finally {
       setSubmitting(false);
       setSubmitted(true);
@@ -144,11 +150,11 @@ export default function Contact() {
                 />
               </label>
               <label>
-                Email{" "}
+                {t.emailLabel}{" "}
                 <input
                   type="email"
                   name="email"
-                  placeholder="email@exemple.com"
+                  placeholder={t.emailPlaceholder}
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -170,7 +176,7 @@ export default function Contact() {
                 className="btn btn-primary"
                 disabled={submitting}
               >
-                {submitting ? "Envoi..." : t.submit}
+                {submitting ? t.sending : t.submit}
               </button>
               {submitted && success && (
                 <p className="form-success">{t.success}</p>
